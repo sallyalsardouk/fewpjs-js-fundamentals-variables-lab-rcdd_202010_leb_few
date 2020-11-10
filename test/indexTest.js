@@ -10,7 +10,7 @@ describe('index.js', function () {
       expect(companyName).to.equal('Scuber');
     });
     it('does not raise error if the companyName is changed', function () {
-      expect(function () { companyName= 'Upper West Side' }).to.not.throw(TypeError);
+      expect(function () { companyName= 'Scuber' }).to.not.throw(TypeError);
     });
 
     it('is defined as a const', function () {
@@ -46,7 +46,7 @@ describe('index.js', function () {
     });
   });
 });
- companyName ='Scuber';
+ const companyName ='Scuber';
 
 mostProfitableNeighborhood='Chelsea';
 companyCeo='Susan Smith';
