@@ -9,6 +9,9 @@ describe('index.js', function () {
     it('is set as Scuber', function () {
       expect(companyName).to.equal('Scuber');
     });
+    it('does not raise error if the companyName is changed', function () {
+      expect(function () { companyName= 'Upper West Side' }).to.not.throw(TypeError);
+    });
 
     it('is defined as a const', function () {
       expect(js).to.match(/const companyName/, "Expected companyName to be a const");
