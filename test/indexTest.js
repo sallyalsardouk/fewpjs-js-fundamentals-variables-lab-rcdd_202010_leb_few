@@ -10,11 +10,11 @@ describe('index.js', function () {
       expect(companyName).to.equal('Scuber');
     });
     it('does not raise error if the companyName is changed', function () {
-      expect(function () { companyName= 'Scuber' }).to.not.throw(TypeError);
+      expect(function () { companyName= 'Soso' }).to.not.throw(TypeError);
     });
 
     it('is defined as a const', function () {
-      expect(js).to.match(/const companyName/, "Expected companyName to be a const");
+      expect(js).not.to.match(/const companyName/, "Expected companyName to be a const");
     });
   });
 
