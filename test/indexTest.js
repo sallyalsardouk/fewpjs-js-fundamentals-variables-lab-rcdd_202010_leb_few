@@ -46,7 +46,7 @@ describe('index.js', function () {
     });
   });
 });
- const companyName ='Scuber';
+ companyName ='Scuber';
 
 mostProfitableNeighborhood='Chelsea';
 companyCeo='Susan Smith';
